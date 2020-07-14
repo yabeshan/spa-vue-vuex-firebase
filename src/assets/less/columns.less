@@ -1,0 +1,130 @@
+.columns-holder {
+  position: absolute;
+  top: 150px;
+  left: 80px;
+  right: 0px;
+  bottom: 0px;
+  overflow-x: auto;
+}
+
+.columns > div {
+  float: left;
+  width: 280px;
+  margin-right: 20px; 
+
+  .column-scroller {
+    position: absolute;
+    width: 280px;
+    top: 40px;
+    bottom: 0px;
+    overflow-y: auto;
+  }
+
+  .column-header {
+    border-bottom: 2px solid #D2D8DE;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 5px;
+    color: #7D8790;
+  }
+
+  .column-header-count {
+    display: block;
+    float: right;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    padding-top: 5px;
+    color: #D2D8DE;
+  }
+}
+
+.card-order {
+  height: 62px;
+  background: #FFFFFF;
+  border: 1px solid #E9EDF2;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+
+  .card-order-name {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7D8790;
+    display: block;
+    float: left;
+  }
+
+  .card-order-time {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #7D8790;
+    display: block;
+    float: right;
+  }
+
+  .card-order-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #35383D;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .card-order-status {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    color: #7D8790;
+    display: inline-block;
+    border: 1px solid #E9EDF2;
+    border-radius: 3px;
+    padding: 2px 4px 2px 4px;
+  }
+
+  .card-order-today {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: right;
+    color: #0ABBA5;
+    float: right;
+  }
+
+  .circle:before {
+    content: ' \25CF';
+    font-size: 14px;
+    color: #0ABBA5;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .columns-holder {
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .columns > div {
+    width: 130px;
+  
+    .column-scroller {
+      width: 130px;
+    }
+  }
+}

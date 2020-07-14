@@ -1,0 +1,87 @@
+.sidebar-background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(100, 100, 100, .01);
+}
+
+.sidebar-holder {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  bottom: 0px;
+  width: 480px;
+  background: #FFFFFF;
+  box-shadow: -2px 0px 12px rgba(53, 56, 61, 0.3);
+  padding: 20px 10px 20px 10px;
+
+  span {
+    width: 100px;
+    display: inline-block;
+  }
+
+  input[type=text] {
+    width: 370px;
+    height: 25px;
+    margin-bottom: 10px;
+  }
+
+  input[type=radio] {
+    margin: 0px 10px 10px 100px;
+  }
+
+  button {
+    width: 280px;
+    height: 40px;
+    margin: 20px 0px 40px 100px;
+    background: #398BFF;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-family: TT Norms Regular;
+  }
+
+  .new-order-type {
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sidebar-holder {
+    width: 300px;
+
+    input[type=text] {
+      width: 180px;
+    }
+
+    button {
+      width: 120px;
+      height: 40px;
+      margin: 20px 0px 40px 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .sidebar-holder {
+    width: 140px;
+
+    input[type=text] {
+      width: 140px;
+    }
+
+    input[type=radio] {
+      margin: 0px 10px 10px 10px;
+    }
+
+    button {
+      width: 140px;
+      height: 40px;
+      margin: 20px 5px 40px 5px;
+    }
+
+
+  }
+}

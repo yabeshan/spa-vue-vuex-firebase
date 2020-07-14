@@ -1,0 +1,47 @@
+.widgets-holder {
+  position: absolute;
+  top: 70px;
+  left: 80px;
+  right: 0px;
+  overflow-x: auto;
+}
+
+.widgets > div {
+  float: left;
+  background: #FFFFFF;
+  margin-right: 10px;
+  min-width: 90px;
+  border-radius: 5px;
+  padding: 7px;
+
+  .title {
+    font-size: 12px;
+    line-height: 14px;
+    color: #7D8790;
+  }
+
+  .left {
+    float: left;
+    margin-right: 10px;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .total {
+    width: 100%;
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+    color: #35383D;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .widgets-holder {
+    left: 0px;
+  }
+}

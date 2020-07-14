@@ -1,0 +1,107 @@
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #2A3247;
+
+  button {
+    background-color: #2A3247;
+    height: 50px;
+    border: none;
+    outline:none;
+    float: right;
+    cursor: pointer;
+    color: #7D8790;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 17px;
+  }
+  
+  button:hover {
+    color: #FFFF66;
+  }
+
+  .logo {
+    background: #F24651;
+    border-radius: 2px;
+    width: 18px;
+    float: left;
+    margin-right: 7px;
+  }
+
+  .name {
+    visibility: visible;
+  }
+
+  .title {
+    float: left;
+    padding: 17px 70px 17px 70px;
+    color: #FFFFFF;
+  }
+
+  .title:hover {
+    color: #FFFFCC;
+  }
+
+  .active {
+    background-color: #398BFF;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+
+  .grey-support {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .grey-settings {
+    font-size: 20px;
+    padding-top: 8px;
+    font-weight: bolder;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    .logo {
+      background: #F24651;
+      border-radius: 2px;
+      width: 18px;
+      float: left;
+      margin-right: 7px;
+    }
+  
+    .title {
+      float: left;
+      padding: 17px 10px 17px 10px;
+      color: #FFFFFF;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header {
+    .title {
+      float: left;
+      width: 50px;
+      color: #FFFFFF;
+    }
+    .name {
+      visibility: hidden;
+    }
+    .active {
+      width: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .header {
+    .title {
+      width: 40px;
+    }
+    button {
+      width: 35px;
+    }
+  }
+}
